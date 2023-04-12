@@ -3,4 +3,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  get '/questions', to: 'questions#ask'
+  get '/answers', to: 'questions#coach_answers'
 end
+
+# action and view need to have the same name > get_answers
